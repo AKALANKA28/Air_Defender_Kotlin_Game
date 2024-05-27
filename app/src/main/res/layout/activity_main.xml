@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/landscape2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="187dp"
+        android:layout_height="92dp"
+        android:layout_above="@+id/volumeCtrl"
+        android:layout_marginBottom="119dp"
+        android:src="@drawable/shoot1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/play"
+        android:layout_below="@id/highScoreTxt"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-black"
+
+        android:text="AIR DEFENDER"
+        android:textColor="#ffffff"
+        android:textSize="68sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Start"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="59sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:text="High Score"
+        android:textStyle="bold"
+        android:id="@+id/highScoreTxt"
+        android:layout_margin="16dp"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:id="@+id/volumeCtrl"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/baseline_volume_up_24" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="41dp"
+        android:layout_height="25dp"
+        android:layout_above="@+id/imageView4"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="-36dp"
+        android:layout_toStartOf="@+id/play"
+        app:srcCompat="@drawable/bullet" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="44dp"
+        android:layout_height="24dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="133dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toStartOf="@+id/play"
+        app:srcCompat="@drawable/bullet" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="67dp"
+        android:layout_height="23dp"
+        android:layout_above="@+id/imageView"
+        android:layout_alignEnd="@+id/play"
+        android:layout_marginEnd="218dp"
+        android:layout_marginBottom="-77dp"
+        app:srcCompat="@drawable/bullet" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="153dp"
+        android:layout_height="74dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="186dp"
+        app:srcCompat="@drawable/frame1" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="123dp"
+        android:layout_height="77dp"
+        android:layout_above="@+id/imageView6"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="-141dp"
+        app:srcCompat="@drawable/frame2" />
+
+</RelativeLayout>
